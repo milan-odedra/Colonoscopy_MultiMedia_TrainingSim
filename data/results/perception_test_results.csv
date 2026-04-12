@@ -1,0 +1,52 @@
+type,video_time,question,click_x,click_y,is_correct
+lumen,00:52.98,Where is the lumen? quiz 1,964,795,True
+lumen,01:42.98,Where is the lumen? quiz 2,1517,434,True
+lumen,02:14.98,Where is the lumen? quiz 3,1856,640,True
+mcq,03:01.99,Where are we now? quiz 1,Sigmoid,Splenic flexure,False
+mcq,03:40.98,Where are we now? quiz 2,Sigmoid,Transverse colon,False
+mcq,05:20.98,Where are we now? quiz 3,Sigmoid,Descending colon,False
+mcq,06:01.99,Position-change prompt 1,Left lateral,Right lateral,False
+mcq,06:15.99,Position-change prompt 2,Left lateral,Supine,False
+polyp_report,1,07:42.39,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+polyp_report,2,08:27.00,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+polyp_report,3,08:52.09,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+polyp_report,4,09:40.01,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+mcq,10:05.98,Position-change prompt 3,Left lateral,Prone,False
+polyp_report,5,11:24.28,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+mcq,11:53.99,What is the patient's current position?,Supine,Supine,True
+mcq,12:19.98,Position-change prompt 4,Left lateral,Left lateral,True
+polyp_report,6,12:42.19,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+polyp_report,7,13:33.74,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+polyp_report,8,13:55.43,Transverse colon,10–15 mm,0-IIa (Flat elevated),Type 1 (Hyperplastic),Carcinoma,EMR
+polyp_report,9,14:28.98,Descending colon,15–20 mm,0-IIb (Completely flat),Type 3 (Deep submucosal invasive cancer),Hyperplastic,Biopsy forceps
+type,video_time,question,click_x,click_y,is_correct
+lumen,00:52.98,Where is the lumen? quiz 1,1004,785,True
+lumen,01:42.98,Where is the lumen? quiz 2,1570,472,True
+lumen,02:14.98,Where is the lumen? quiz 3,1873,719,True
+mcq,03:01.99,Where are we now? quiz 1,Sigmoid,Splenic flexure,False
+mcq,03:40.98,Where are we now? quiz 2,Sigmoid,Transverse colon,False
+mcq,05:20.98,Where are we now? quiz 3,Sigmoid,Descending colon,False
+mcq,06:01.99,Position-change prompt 1,Left lateral,Right lateral,False
+mcq,06:15.99,Position-change prompt 2,Left lateral,Supine,False
+polyp_report,1,07:42.39,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+polyp_report,2,08:27.00,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+polyp_report,3,08:52.09,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+polyp_report,4,09:36.39,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+mcq,10:05.98,Position-change prompt 3,Left lateral,Prone,False
+polyp_report,5,11:24.28,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+mcq,11:53.99,What is the patient's current position?,Supine,Supine,True
+mcq,12:19.98,Position-change prompt 4,Left lateral,Left lateral,True
+polyp_report,6,12:42.19,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+polyp_report,7,13:33.74,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+polyp_report,8,13:55.43,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+polyp_report,9,14:28.98,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+polyp_report,10,16:29.98,Transverse colon,15–20 mm,0-IIb (Completely flat),Type 2 (Adenoma/SSA/P),Sessile serrated lesion,Biopsy forceps
+mcq,16:55.99,What is the size of this resection specimen?,15–20 mm,5–10 mm,False
+type,video_time,question,click_x,click_y,is_correct
+lumen,00:52.98,Where is the lumen? quiz 1,1000,844,True
+type,polyp_number,video_time,site,size_estimate,paris_classification,nice_classification,likely_histology,excision_technique
+polyp_report,4,09:40.01,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+mcq,10:05.98,Position-change prompt 3,Left lateral,Prone,False
+type,video_time,question,click_x,click_y,is_correct
+lumen,00:53.00,Where is the lumen? quiz 1,938,814,True
+lumen,01:43.00,Where is the lumen? quiz 2,1744,337,False

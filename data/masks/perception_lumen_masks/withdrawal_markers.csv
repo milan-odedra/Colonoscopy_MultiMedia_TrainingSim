@@ -1,0 +1,14 @@
+# Withdrawal Phase Markers
+# Format: start_time;end_time;description
+# Times are in seconds
+# Description should indicate what is being shown and any notable features
+# Focus on systematic withdrawal and final assessment
+# Skip segments with camera issues (shakes, still shots, unclear views)
+
+
+2125;2195;Withdrawal phase segment 1
+2232;2294;Withdrawal phase segment 2
+2299;2363;Withdrawal phase segment 3
+2368;2403;Withdrawal phase segment 4
+2412;2435;Withdrawal phase segment 5
+2444;2446;Withdrawal phase segment 6 

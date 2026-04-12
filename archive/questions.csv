@@ -1,0 +1,26 @@
+time;question;option_a;option_b;option_c;option_d;correct_answer;correct_location
+607;Is there a polyp visible in this frame?;Yes;No;Unclear;Not applicable;A;data/masks/frame_10_07_mask.png
+645;Click on the blood vessel in this frame.;Blood vessel;Polyp;Normal mucosa;Artifact;A;data/masks/frame_10_45_mask.png
+679;Do you see a cluster of polyps emerging?;Yes;No;Unclear;Not applicable;A;No location needed
+693;How many polyps can you spot in this cluster?;1 polyp;2 polyps;3 polyps;4 or more polyps;B;No location needed
+708;Are there more polyps visible in this segment?;Yes;No;Unclear;Not applicable;A;No location needed
+745;What is being shown in this still shot?;Polyp;Normal tissue;Blood vessel;Unknown;A;data/masks/frame_12_25_mask.png
+750;What imaging mode is being used to highlight the polyp? | "Play the clip ahead to see the imaging modes";NBI (Narrow Band Imaging);RDI (Red Dichromatic Imaging);Blue Light;White Light;A;No location needed
+767;What is the Paris classification of this polyp?;0-Is (Sessile);0-Ip (Pedunculated);0-IIa (Slightly elevated);0-IIb (Flat);A;No location needed
+860;Are there polyps on the colon arch here?;Yes;No;Unclear;Not applicable;A;No location needed
+977;Do you see more polyps in this section? | "Play the clips ahead to get a closer look";Yes;No;Unclear;Not applicable;A;No location needed
+1000;What is the size of this polyp?;Large;Medium;Small;Cannot determine;A;No location needed
+1084;What is notable about the polyp in this frame?;Size;Normal tissue;Blood Classification;Unknown;A;No location needed
+1112;What is the Paris classification of this polyp?;0-Is (Sessile);0-Ip (Pedunculated);0-IIa (Slightly elevated);0-IIb (Flat);A;No location needed
+1115;What is the most likely histology of this polyp?;Adenoma;Hyperplastic;Inflammatory;Serrated;A;No location needed
+1142;What is the recommended management for this polyp?;Resect;Biopsy;Follow-up;No action needed;A;No location needed
+1160;What is the risk level of this polyp?;Low;Intermediate;High;Cannot assess;A;data/masks/frame_19_20_mask.png
+1195;Click on the area where the endoscopist is focusing for polyp assessment.;Polyp area;Normal tissue;Artifact;Not applicable;A;data/masks/frame_19_55_mask.png
+1223;Click on the second polyp in this frame (after the dyed one).;Second polyp;Dyed polyp;Normal tissue;Artifact;A;data/masks/frame_20_23_mask.png
+1243;What is the Paris classification of this polyp?;0-Is (Sessile);0-Ip (Pedunculated);0-IIa (Slightly elevated);0-IIb (Flat);A;No location needed
+1269;Is this the same polyp as before? What do you notice?;Yes;No;Unclear;Not applicable;A;No location needed
+1283;Describe the pattern visible in this close-up.;Regular;Irregular;Not visible;Not sure;A;No location needed
+1920;Was a polyp spotted in this segment?;Yes;No;Unclear;Not applicable;A;No location needed
+2040;What can you see in this polyp still shot?;Polyp;Normal tissue;Blood vessel;Unknown;A;No location needed
+2050;What does the NBI poly screen shot reveal?;Polyp;Normal tissue;Blood vessel;Unknown;A;Click required
+2050;What polyp features are most visible under NBI?;Surface pattern;Vascular pattern;Both patterns;No clear features;A;No location needed

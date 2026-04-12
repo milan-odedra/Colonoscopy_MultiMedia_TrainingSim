@@ -1,0 +1,45 @@
+start_time,end_time,question_type,question_text,mask_path,question_options,correct_option
+53,,lumen,Where is the lumen? quiz 1,data/masks/perception_lumen_masks/frame_00_52_mask.png,,
+103,,lumen,Where is the lumen? quiz 2,data/masks/perception_lumen_masks/frame_01_43_mask.png,,
+135,,lumen,Where is the lumen? quiz 3,data/masks/perception_lumen_masks/frame_02_15_mask.png,,
+182,,location,Where are we now? quiz 1,,Sigmoid|Descending colon|Splenic flexure|Transverse colon|Hepatic flexure,3
+221,,location,Where are we now? quiz 2,,Sigmoid|Descending colon|Splenic flexure|Transverse colon|Hepatic flexure,4
+321,,location,Where are we now? quiz 3,,Sigmoid|Descending colon|Splenic flexure|Transverse colon|Hepatic flexure,2
+355,,marker,Insertion Phase Complete - Polyp Detection Begins,,,,
+362,,position,Position-change prompt 1,,Left lateral|Supine|Right lateral|Prone,3
+376,,position,Position-change prompt 2,,Left lateral|Supine|Right lateral|Prone,2
+396,399.096,polyp_window,Click when you see a polyp,data/masks/polyp_masks/Polyp-1_frame_06_36_096_mask.png,,
+407,407,marker,Scope advanced to review Polyp 1,,,,
+462.40,,polyp_report,Polyp 1: Please complete the polyp report.,,,
+486,489.089,polyp_window,Click when you see a polyp,data/masks/polyp_masks/Polyp-2_frame_08_09_089_mask.png,,
+507,507,marker,Scope advanced to review Polyp 2,,,,
+503.40,,polyp_report,Polyp 2: Please complete the polyp report.,,,
+509,509,marker,Scope advanced to review Polyp 2,,,,
+511,515.665,polyp_window,Click when you see a polyp,data/masks/polyp_masks/Polyp-3_frame_08_35_665.png,,
+522,522,marker,Scope advanced to review Polyp 3,,,,
+532.10,,polyp_report,Polyp 3: Please complete the polyp report.,,,
+558,563.546,polyp_window,Click when you see a polyp,data/masks/polyp_masks/Polyp-4_frame_09_23_546.png,,
+580,580,marker,Scope advanced to review Polyp 4,,,,
+576.40,,polyp_report,Polyp 4: Please complete the polyp report.,,,
+606,,position,Position-change prompt 3,,Left lateral|Supine|Right lateral|Prone,4
+646,656.589,polyp_window,Click when you see a polyp,data/masks/polyp_masks/Polyp-5_frame_10_56_589.png,,
+663,663,marker,Scope advanced to review Polyp 5,,,,
+684.30,,polyp_report,Polyp 5: Please complete the polyp report.,,,
+714,,position,What is the patient's current position?,,Supine|Prone|Left lateral|Right lateral|Trendelenburg|Reverse Trendelenburg|Lithotomy,1
+740,,position,Position-change prompt 4,,Left lateral|Supine|Right lateral|Prone,1
+748,750.600,polyp_window,Click when you see a polyp,data/masks/polyp_masks/Polyp-6_frame_12_30_600.png,,
+758,758,marker,Scope advanced to review Polyp 6,,,,
+762.20,,polyp_report,Polyp 6: Please complete the polyp report.,,,
+792,798.681,polyp_window,Click when you see a polyp,data/masks/polyp_masks/Polyp-7_frame_13_18_681.png,,
+805,805,marker,Scope advanced to review Polyp 7,,,,
+813.75,,polyp_report,Polyp 7: Please complete the polyp report.,,,
+816,823.089,polyp_window,Click when you see a polyp,data/masks/polyp_masks/Polyp-8_frame_13_43_089.png,,
+830,830,marker,Scope advanced to review Polyp 8,,,,
+835.45,,polyp_report,Polyp 8: Please complete the polyp report.,,,
+845,846.996,polyp_window,Click when you see a polyp,data/masks/polyp_masks/Polyp-9_frame_14_06_996.png,,
+853,853,marker,Scope advanced to review Polyp 9,,,,
+869.00,,polyp_report,Polyp 9: Please complete the polyp report.,,,
+954,982.131,polyp_window,Click when you see a polyp,data/masks/polyp_masks/Polyp-10_frame_16_22_131.png,,
+978,978,marker,Scope advanced to review Polyp 10,,,,
+990.00,,polyp_report,Polyp 10: Please complete the polyp report.,,,
+1016,,location,What is the size of this resection specimen?,,0–5 mm|5–10 mm|10–15 mm|15–20 mm|20–25 mm|25+ mm,2

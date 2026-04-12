@@ -1,0 +1,31 @@
+start;end;description
+396.100;399.000;Polyp 1 - Initial detection window
+407.040;407.140;Polyp 1 - Best frame for mask creation
+407.040;462.400;Polyp 1 - Detailed review (Scope advanced to review polyp)
+486.200;489.000;Polyp 2 - Initial detection window
+489.100;489.200;Polyp 2 - Best frame for mask creation
+503.400;503.400;Polyp 2 - Detailed review (Scope advanced to review polyp)
+511.270;515.570;Polyp 3 - Initial detection window
+515.670;515.770;Polyp 3 - Best frame for mask creation
+518.400;532.100;Polyp 3 - Detailed review (Scope advanced to review polyp)
+558.000;563.450;Polyp 4 - Initial detection window
+563.550;563.650;Polyp 4 - Best frame for mask creation
+566.150;576.400;Polyp 4 - Detailed review (Scope advanced to review polyp)
+646.450;656.500;Polyp 5 - Initial detection window
+656.600;656.700;Polyp 5 - Best frame for mask creation
+659.400;684.300;Polyp 5 - Detailed review (Scope advanced to review polyp)
+748.000;751.400;Polyp 6 - Initial detection window
+751.500;751.600;Polyp 6 - Best frame for mask creation
+754.250;762.200;Polyp 6 - Detailed review (Scope advanced to review polyp)
+792.100;798.590;Polyp 7 - Initial detection window
+798.690;798.790;Polyp 7 - Best frame for mask creation
+801.000;813.450;Polyp 7 - Detailed review (Scope advanced to review polyp)
+814.500;823.000;Polyp 8 - Initial detection window
+823.100;823.200;Polyp 8 - Best frame for mask creation
+825.580;835.270;Polyp 8 - Detailed review (Scope advanced to review polyp)
+845.000;848.450;Polyp 9 - Initial detection window
+848.550;848.650;Polyp 9 - Best frame for mask creation
+849.400;869.000;Polyp 9 - Detailed review (Scope advanced to review polyp)
+954.200;974.300;Polyp 10 - Initial detection window
+974.400;974.500;Polyp 10 - Best frame for mask creation
+977.570;990.000;Polyp 10 - Detailed review (Scope advanced to review polyp)

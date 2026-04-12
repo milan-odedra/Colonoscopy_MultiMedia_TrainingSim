@@ -1,0 +1,55 @@
+Perception Test V2 Results
+Test Date;20250623_134401
+Polyp Detection - Correct;0
+Polyp Detection - Incorrect;0
+Message Questions - Total;0
+Message Questions - Answered;0
+Total Questions Answered;2
+
+Question Breakdown
+Normal Questions;17
+Message Questions;5
+Answer Timestamps;13
+Still Shot Questions;1
+
+Detailed Question Results
+Start Time;End Time;Type;Question;Answered;User Answer;Choices;Linked Answer;Notes
+00:01;00:53;lumen;Where's the Lumen?;Yes;669,908 (Incorrect);;;Insertion Phase Q1
+00:54;01:44;lumen;Where's the Lumen?;Yes;570,126 (Incorrect);;;Insertion Phase Q2
+01:45;02:17;lumen;Where's the Lumen?;No;;;;Insertion Phase Q3
+02:18;03:03;message;Where are we now?;No;;Sigmoid,Descending,Transverse,Ascending,Cecum;;Insertion Phase Q4
+03:04;03:42;message;Where are we now?;No;;Sigmoid,Descending,Transverse,Ascending,Cecum;;Insertion Phase Q5
+03:43;05:22;message;Where are we now?;No;;Sigmoid,Descending,Transverse,Ascending,Cecum;;Insertion Phase Q6
+05:23;05:56;message;Insertion Phase Complete;No;;;;Phase transition
+06:00;06:18;message;Fluid Limiting View - Position Change Recommended;No;;;;No polyp detection
+06:22;06:30;normal;Polyp Perception Interval #1 - Click if you see polyp;No;;;;Polyp missed at 6:47
+06:31;06:47;normal;Polyp Perception Interval #2 - Click if you see polyp;No;;;;
+06:51;06:58;still_shot;Still Shot - Obvious Answer;No;;;;
+06:59;07:10;answer;Polyp Still shot with water spray;No;;;;end_summary
+07:11;07:17;answer;Still shot - Dyed Polyp;No;;;;end_summary
+07:24;07:51;normal;Polyp Perception Interval #3 - Click if you see polyp;No;;;;
+07:52;08:00;answer;NBI Polyp;No;;;;end_summary
+08:02;08:05;answer;Polyp getting Pierced;No;;;;end_summary
+08:24;08:48;normal;Polyp Perception Interval #4 - Click if you see polyp;No;;;;
+08:49;08:51;answer;NBI Polyp Still Shot;No;;;;end_summary
+08:53;09:23;normal;Polyp Perception Interval #5 - Click if you see polyp;No;;;;
+09:23;09:26;answer;No filter screenshot;No;;;;end_summary
+09:26;09:33;normal;Polyp Perception Interval #6 - Click if you see polyp;No;;;;
+09:34;09:36;answer;NBI Polyp Answer;No;;;;end_summary
+09:41;09:54;normal;Polyp Perception Interval #7 - Click if you see polyp;No;;;;Views Obscured By Fluid
+10:00;10:37;normal;Polyp Perception Interval #8 - Click if you see polyp;No;;;;Poor views - bowel collapsed
+10:41;11:10;normal;Polyp Perception Interval #9 - Click if you see polyp;No;;;;Poor views - fluid
+11:15;12:00;normal;Polyp Perception Interval #10 - Click if you see polyp;No;;;;
+12:05;12:12;normal;Polyp Perception Interval #11 - Click if you see polyp;No;;;;
+12:13;12:23;answer;PPL #11 Answer - Missed NBI Filter;No;;;;end_summary
+12:29;13:02;normal;Polyp Perception Interval #12 - Click if you see polyp;No;;;;
+13:05;13:18;answer;PPL #12 Answer;No;;;;end_summary
+13:20;13:27;normal;Polyp Perception Interval #13 - Click if you see polyp;No;;;;
+13:28;13:40;answer;PPL #13 Answer;No;;;;end_summary
+13:42;13:51;normal;Polyp Perception Interval #14 - Click if you see polyp;No;;;;
+13:55;14:03;normal;Polyp Perception Interval #15 - Click if you see polyp;No;;;;
+14:04;14:06;answer;PPL #15 Answer;No;;;;end_summary
+14:08;14:13;answer;PPL #15 Getting Pierced Answer;No;;;;end_summary
+14:15;16:49;normal;PPL #16 - Is there a Polyp in this interval?;No;;;;
+16:50;17:24;normal;PPL #17 - Polyp spotted near the exit?;No;;;;
+17:25;17:34;answer;PPL #17 Answer;No;;;;end_summary

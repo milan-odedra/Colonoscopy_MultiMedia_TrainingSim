@@ -1,0 +1,156 @@
+type,video_time,question,click_x,click_y,is_correct
+lumen,00:52.98,Where is the lumen? quiz 1,1139,518,False
+lumen,01:42.98,Where is the lumen? quiz 2,1049,793,False
+lumen,02:14.98,Where is the lumen? quiz 3,1857,642,True
+mcq,03:01.99,Where are we now? quiz 1,Sigmoid,Splenic flexure,False
+mcq,03:40.98,Where are we now? quiz 2,Sigmoid,Transverse colon,False
+mcq,05:20.98,Where are we now? quiz 3,Sigmoid,Descending colon,False
+mcq,06:01.99,Position-change prompt 1,Left lateral,Right lateral,False
+mcq,06:15.99,Position-change prompt 2,Left lateral,Supine,False
+type,video_time,question,click_x,click_y,is_correct
+lumen,00:52.98,Where is the lumen? quiz 1,965,870,True
+lumen,01:42.98,Where is the lumen? quiz 2,1483,478,True
+lumen,02:14.98,Where is the lumen? quiz 3,1844,611,True
+mcq,03:01.99,Where are we now? quiz 1,Sigmoid,Splenic flexure,False
+mcq,03:40.98,Where are we now? quiz 2,Sigmoid,Transverse colon,False
+mcq,05:20.98,Where are we now? quiz 3,Sigmoid,Descending colon,False
+mcq,06:01.99,Position-change prompt 1,Left lateral,Right lateral,False
+mcq,06:15.99,Position-change prompt 2,Left lateral,Supine,False
+type,video_time,question,click_x,click_y,is_correct
+lumen,00:52.98,Where is the lumen? quiz 1,1048,857,True
+lumen,01:42.98,Where is the lumen? quiz 2,1531,502,True
+lumen,02:14.98,Where is the lumen? quiz 3,1836,632,True
+mcq,03:01.99,Where are we now? quiz 1,Sigmoid,Splenic flexure,False
+mcq,03:40.98,Where are we now? quiz 2,Sigmoid,Transverse colon,False
+mcq,05:20.98,Where are we now? quiz 3,Sigmoid,Descending colon,False
+mcq,06:01.99,Position-change prompt 1,Left lateral,Right lateral,False
+mcq,06:15.99,Position-change prompt 2,Left lateral,Supine,False
+type,video_time,question,click_x,click_y,is_correct
+lumen,00:52.98,Where is the lumen? quiz 1,1004,885,True
+lumen,01:42.98,Where is the lumen? quiz 2,1562,491,True
+lumen,02:14.98,Where is the lumen? quiz 3,1859,607,True
+mcq,03:01.99,Where are we now? quiz 1,Sigmoid,Splenic flexure,False
+mcq,03:40.98,Where are we now? quiz 2,Sigmoid,Transverse colon,False
+mcq,05:20.98,Where are we now? quiz 3,Sigmoid,Descending colon,False
+mcq,06:01.99,Position-change prompt 1,Left lateral,Right lateral,False
+mcq,06:15.99,Position-change prompt 2,Left lateral,Supine,False
+polyp_report,1,07:42.39,Caecum,,0-III (Excavated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+type,video_time,question,click_x,click_y,is_correct
+lumen,00:52.98,Where is the lumen? quiz 1,958,837,True
+lumen,01:42.98,Where is the lumen? quiz 2,1092,828,False
+lumen,02:14.98,Where is the lumen? quiz 3,1858,687,True
+mcq,03:01.99,Where are we now? quiz 1,Sigmoid,Splenic flexure,False
+mcq,03:40.98,Where are we now? quiz 2,Sigmoid,Transverse colon,False
+mcq,05:20.98,Where are we now? quiz 3,Sigmoid,Descending colon,False
+mcq,06:01.99,Position-change prompt 1,Left lateral,Right lateral,False
+mcq,06:15.99,Position-change prompt 2,Left lateral,Supine,False
+polyp_report,1,07:42.39,Sigmoid colon,5,0-IIa (Flat elevated),Type 3 (Deep submucosal invasive cancer),Traditional serrated adenoma,ESD
+type,video_time,question,click_x,click_y,is_correct
+lumen,00:52.98,Where is the lumen? quiz 1,1020,811,True
+lumen,01:42.98,Where is the lumen? quiz 2,1640,481,True
+lumen,02:14.98,Where is the lumen? quiz 3,1840,616,True
+mcq,03:01.99,Where are we now? quiz 1,Sigmoid,Splenic flexure,False
+mcq,03:40.98,Where are we now? quiz 2,Sigmoid,Transverse colon,False
+mcq,05:20.98,Where are we now? quiz 3,Sigmoid,Descending colon,False
+mcq,06:01.99,Position-change prompt 1,Left lateral,Right lateral,False
+mcq,06:15.99,Position-change prompt 2,Left lateral,Supine,False
+type,video_time,question,click_x,click_y,is_correct
+lumen,00:52.98,Where is the lumen? quiz 1,988,863,True
+lumen,01:42.98,Where is the lumen? quiz 2,1637,536,False
+lumen,02:14.98,Where is the lumen? quiz 3,1834,665,True
+mcq,03:01.99,Where are we now? quiz 1,Sigmoid,Splenic flexure,False
+mcq,03:40.98,Where are we now? quiz 2,Sigmoid,Transverse colon,False
+mcq,05:20.98,Where are we now? quiz 3,Sigmoid,Descending colon,False
+mcq,06:01.99,Position-change prompt 1,Left lateral,Right lateral,False
+mcq,06:15.99,Position-change prompt 2,Left lateral,Supine,False
+polyp_report,1,07:42.39,Sigmoid colon,5,0-Is (Sessile),Type 2 (Adenoma/SSA/P),Hyperplastic,EMR
+type,video_time,question,click_x,click_y,is_correct
+lumen,00:52.98,Where is the lumen? quiz 1,982,769,True
+lumen,01:42.98,Where is the lumen? quiz 2,1628,451,True
+lumen,02:14.98,Where is the lumen? quiz 3,1898,652,False
+mcq,03:01.99,Where are we now? quiz 1,Sigmoid,Splenic flexure,False
+mcq,03:40.98,Where are we now? quiz 2,Sigmoid,Transverse colon,False
+mcq,05:20.98,Where are we now? quiz 3,Sigmoid,Descending colon,False
+mcq,06:01.99,Position-change prompt 1,Left lateral,Right lateral,False
+mcq,06:15.99,Position-change prompt 2,Left lateral,Supine,False
+mcq,06:01.99,Position-change prompt 1,Left lateral,Right lateral,False
+mcq,06:15.99,Position-change prompt 2,Left lateral,Supine,False
+polyp_report,1,07:42.39,Rectum,,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+polyp_report,2,08:27.00,Rectum,,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+type,video_time,question,click_x,click_y,is_correct
+lumen,00:52.98,Where is the lumen? quiz 1,991,830,True
+type,video_time,question,click_x,click_y,is_correct
+lumen,00:52.98,Where is the lumen? quiz 1,982,818,True
+lumen,01:42.98,Where is the lumen? quiz 2,1541,426,True
+lumen,02:14.98,Where is the lumen? quiz 3,1849,676,True
+mcq,03:01.99,Where are we now? quiz 1,Sigmoid,Splenic flexure,False
+mcq,03:40.98,Where are we now? quiz 2,Sigmoid,Transverse colon,False
+mcq,05:20.98,Where are we now? quiz 3,Sigmoid,Descending colon,False
+mcq,06:01.99,Position-change prompt 1,Left lateral,Right lateral,False
+mcq,06:15.99,Position-change prompt 2,Left lateral,Supine,False
+type,video_time,question,click_x,click_y,is_correct
+lumen,00:52.98,Where is the lumen? quiz 1,1087,742,False
+lumen,01:42.98,Where is the lumen? quiz 2,1469,465,True
+lumen,02:14.98,Where is the lumen? quiz 3,1859,742,True
+mcq,03:01.99,Where are we now? quiz 1,Sigmoid,Splenic flexure,False
+mcq,03:40.98,Where are we now? quiz 2,Sigmoid,Transverse colon,False
+mcq,05:20.98,Where are we now? quiz 3,Sigmoid,Descending colon,False
+mcq,06:01.99,Position-change prompt 1,Left lateral,Right lateral,False
+mcq,06:15.99,Position-change prompt 2,Left lateral,Supine,False
+mcq,06:15.99,Position-change prompt 2,Left lateral,Supine,False
+polyp_report,1,07:42.41,Rectum,,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+type,video_time,question,click_x,click_y,is_correct
+lumen,00:52.98,Where is the lumen? quiz 1,1118,841,True
+lumen,01:42.98,Where is the lumen? quiz 2,1639,532,False
+lumen,02:14.98,Where is the lumen? quiz 3,1611,521,False
+mcq,03:01.99,Where are we now? quiz 1,Sigmoid,Splenic flexure,False
+mcq,03:40.98,Where are we now? quiz 2,Sigmoid,Transverse colon,False
+mcq,05:20.98,Where are we now? quiz 3,Sigmoid,Descending colon,False
+mcq,06:01.99,Position-change prompt 1,Left lateral,Right lateral,False
+mcq,06:15.99,Position-change prompt 2,Left lateral,Supine,False
+type,video_time,question,click_x,click_y,is_correct
+lumen,00:52.98,Where is the lumen? quiz 1,977,794,True
+lumen,01:42.98,Where is the lumen? quiz 2,1565,406,True
+lumen,02:14.98,Where is the lumen? quiz 3,1867,727,True
+mcq,03:01.99,Where are we now? quiz 1,Sigmoid,Splenic flexure,False
+mcq,03:40.98,Where are we now? quiz 2,Sigmoid,Transverse colon,False
+mcq,05:20.98,Where are we now? quiz 3,Sigmoid,Descending colon,False
+mcq,06:01.99,Position-change prompt 1,Left lateral,Right lateral,False
+mcq,06:15.99,Position-change prompt 2,Left lateral,Supine,False
+type,video_time,question,click_x,click_y,is_correct
+lumen,00:52.98,Where is the lumen? quiz 1,1034,863,True
+lumen,01:42.98,Where is the lumen? quiz 2,1608,412,True
+lumen,02:14.98,Where is the lumen? quiz 3,1826,663,True
+mcq,03:01.99,Where are we now? quiz 1,Sigmoid,Splenic flexure,False
+mcq,03:40.98,Where are we now? quiz 2,Sigmoid,Transverse colon,False
+mcq,05:20.98,Where are we now? quiz 3,Sigmoid,Descending colon,False
+mcq,06:01.99,Position-change prompt 1,Left lateral,Right lateral,False
+mcq,06:15.99,Position-change prompt 2,Left lateral,Supine,False
+polyp_report,1,07:42.39,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+polyp_report,2,08:23.38,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+polyp_report,3,08:52.09,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+polyp_report,4,09:36.39,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+mcq,10:05.98,Position-change prompt 3,Left lateral,Prone,False
+polyp_report,5,11:24.28,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+mcq,11:53.99,What is the patient's current position?,Supine,Supine,True
+mcq,12:19.98,Position-change prompt 4,Left lateral,Left lateral,True
+polyp_report,6,12:42.19,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+polyp_report,7,13:33.74,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+polyp_report,8,13:55.43,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+polyp_report,9,14:28.98,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+polyp_report,10,16:29.98,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+mcq,16:54.69,What is the size of this resection specimen?,15–20 mm,5–10 mm,False
+type,video_time,question,selected_option,correct_option,is_correct
+mcq,16:54.99,What is the size of this resection specimen?,0–5 mm,5–10 mm,False
+type,video_time,question,selected_option,correct_option,is_correct
+mcq,16:54.99,What is the size of this resection specimen?,0–5 mm,5–10 mm,False
+type,polyp_number,video_time,site,size_estimate,paris_classification,nice_classification,likely_histology,excision_technique
+polyp_report,10,16:30.00,Rectum,0–5 mm,0-Ip (Pedunculated),Type 1 (Hyperplastic),Hyperplastic,Cold snare
+type,video_time,question,selected_option,correct_option,is_correct
+mcq,16:55.99,What is the size of this resection specimen?,0–5 mm,5–10 mm,False
+type,video_time,question,selected_option,correct_option,is_correct
+mcq,16:55.99,What is the size of this resection specimen?,0–5 mm,5–10 mm,False
+type,video_time,question,selected_option,correct_option,is_correct
+mcq,16:55.99,What is the size of this resection specimen?,0–5 mm,5–10 mm,False
+type,video_time,question,click_x,click_y,is_correct
+lumen,00:52.98,Where is the lumen? quiz 1,1191,440,False

@@ -1,0 +1,104 @@
+
+Endoscopy Video Application (Perception Test) Plan of Action 
+Controls Overview 
+•	Playback Status: Play/Pause (Spacebar) 
+•	Timestamp Navigation: Next/Previous (N/P keys)
+•	Current Time Display: Show current video time
+•	Speed Toggle: Adjust playback speed (faster/slower)
+•	Marker Information Toggle: Display question type, time marker, current question, and supporting information
+•	Answer Counters: Track correct and incorrect responses
+•	Full Screen Toggle: F key
+•	Mask Overlay Toggle: O key
+•	Multiple Choice Questions: Likely using keys 1–5
+
+Notes: After answer is given correct or not give 1 Second delay (Use variable for this) for message to appear and to resume playing. Put marker information over the patient HUD which needs to be blocked out (From S/N and up).  Message stating number of correct answers that has increased or incorrect answer increases (“+1 Point etc.…”). Once the insertion phase is completed, give a pause saying that it is completed spacebar to resume. 
+•	6:47 freeze-frame “Is this a different polyp”.
+•	For polyp 10: Change timestamps to accommodate this.
+15:54:20	Polyp 10 first appears for first time	Polyp detected window opens
+15:55:40	Polyp 10 disappears for a few seconds	Polyp detected window closes
+16:14:30	Polyp 10 appears again	Polyp detected window re-opens
+16:17:57	Scope advanced to review polyp	Polyp detected window closes
+16:30:00	End of polyp 10 review	User asked to complete polyp report - Polyp 10
+
+Development Phases
+Phase 0 – The Start
+•	File Selection Menu: Choose tests (to be implemented later)
+•	Timestamp Perception Clicks:
+o	Method: (Paul Timestamps): Click within a narrower window (e.g., 384–386). If correct, video jumps to the best image (e.g., 386). If clicked before/after, video rewinds/forwards accordingly.
+
+
+Phase 1 – Enhanced Polyp Detection (Current Footage)
+•	Update perception_test.py to:
+o	Validate polyp clicks within a time window
+o	Provide immediate feedback (correct/incorrect)
+o	Freeze frame on detection
+o	Allow marking (click to mark)
+o	Display simple results: total clicks, correct/incorrect, timing accuracy
+o	Take Mask Overlay off for Final Application
+o	Indicate more to the user the Scope Advanced time stamp and polyp
+o	Test mode allows skipping all questions, maybe specific mode for questions? (Future)
+o	Add Score like pop up (+1 point for spotted polyp), Like COD when you get a kill. 
+
+Phase 2 – Advanced Polyp Interaction
+•	Build on Phase 1 by adding:
+o	Drawing functionality for outlines or mask click (Future)
+o	Multiple filter views (future)
+o	Clip playback (BLENDING) to specific timestamps (future)
+o	Detailed feedback (e.g., distance from actual polyp) (Future)
+
+Phase 3 – Control Phase Features
+•	Add structured questions at pause points
+•	Immediate feedback system
+•	Speed control (Needs amending to show actual speed)
+•	No-skip enforcement (For actual test) (toggle)
+
+Phase 4 – UI/UX Polish (Future)
+•	Modernize interface
+•	Improve menu structure
+•	Add professional styling
+•	Enhance intuitiveness
+
+Types of Questions
+•	Where is the Lumen?
+Freeze frame at timestamp; user clicks lumen location (masks to be created later).
+•	Where Are We Now?
+At timestamp, present MCQ; user selects answers (answers from CSV or default to first option).
+•	Position Change Question:
+Use timestamp and MCQ.
+•	Polyp Perception Questions:
+Use Paul's timestamps; may differ from previous systems. Adjust intervals as needed.
+Note: Ensure timestamps are formatted for code compatibility.
+
+
+Meeting Notes (Important)
+•	Cover Mask Scope: Serial number (7 digits), mask clock, display only lower scope info.
+•	Polyp Time Interval: E.g., 6:36–6:39. Click within window, jump to “Best still image,” blend or fast forward/rewind as needed.
+•	CSV Formatting: Align Paul’s CSV structure with code requirements for synergy.
+•	Immediate Feedback: Show correct/incorrect, end-of-test summary, scores, and extra resources.
+•	Frame Navigation: Pause, rewind/forward (arrow keys), spacebar to pause (navigation does not affect score). DOUBLE CHECK THIS
+•	Special Case: At video end, large polyp estimation (e.g., 20mm guessed, less)—included as final question.
+
+Polyp Classification Questions (I have documents for these answers)
+For each polyp, prompt user to complete a Polyp Report covering:
+•	Site
+•	Size estimate
+•	Paris classification
+•	NICE classification
+•	Likely histology
+•	Excision technique
+Input method (free text vs. drop-down) to be determined. Options to be provided.
+
+
+Debug/Testing Mode
+1. Debug Mode Toggle vs Startup Parameter
+I'd suggest both options for maximum flexibility:
+Option A: Command line parameter (recommended for final version)
+python
+if __name__ == "__main__":
+    import sys
+    debug_mode = "--debug" in sys.argv or "-d" in sys.argv
+    PerceptionTestV2(debug_mode=debug_mode).run()
+Option B: Runtime toggle key (good for development) Add a key like D to toggle debug mode on/off during the test.
+Option C: Config file/environment variable for deployment.
+I'd recommend starting with Option A - it's clean and prevents accidental toggling during a real test.
+
