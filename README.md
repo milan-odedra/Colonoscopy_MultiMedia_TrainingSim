@@ -1,249 +1,200 @@
-# Endoscopy Multimedia Test Suite
+# Colonoscopy Media Training Sim
 
-## Overview
+I built this project as a multimedia training simulator for colonoscopy video review and perception testing. I worked on it over a few months during my Multimedia Application Software Developer job at university.
 
-A comprehensive endoscopy training and assessment platform designed for medical professionals to practice and evaluate their polyp detection, classification, and diagnostic skills. The application provides both practice and official test modes with interactive video-based questions, real-time scoring, and detailed performance analytics.
+The aim is simple: give medical trainees a controlled way to practise spotting pathology, recognising anatomy, and making decisions from colonoscopy footage without the pressure or risk of a live procedure. The sim lets a user review annotated video, answer timed questions, click on regions such as the lumen or polyps, complete polyp classification reports, and export results for later review.
 
-## 🏗️ System Architecture
+## Why I Built It
 
-### Core Components
-- **Main Menu System** (`ColonscopyVideoSim_Demo_v0.py`) - Central launcher and navigation
-- **Practice Mode** (`perception_test_v2.py`) - Flexible training environment with debugging features
-- **Official Test Mode** (`perception_test_official.py`) - Strict assessment environment
-- **Video Review Tool** (`video_review.py`) - Marker-based video analysis
-- **Mask Creator** (`mask_creator.py`) - Interactive annotation tool for creating question masks
+Live procedures are not the right place to learn every basic perception skill. A trainee needs time to pause, replay, inspect frames, make mistakes, and understand what they missed.
 
-### Technology Stack
-- **Python 3.x** - Core application logic
-- **OpenCV** - Video processing and computer vision
-- **Tkinter** - Dialog boxes and user interface elements
-- **NumPy** - Numerical computations and array operations
-- **CSV** - Data storage and marker management
+I built this to support that kind of practice. The simulator uses pre-recorded colonoscopy footage and marker data so the user can train on specific moments in the video. That makes it useful for:
 
-## 🎯 Key Features
+- practising polyp detection in timed windows
+- checking whether the user can identify the lumen during navigation
+- asking location questions during the withdrawal or insertion phase
+- recording polyp details such as site, size, Paris classification, NICE classification, likely histology, and excision technique
+- reviewing answers after a run and exporting the results to CSV
 
-### 1. **Dual Mode System**
-- **Practice Mode**: Flexible navigation, debug features, overlays, and skipping capabilities
-- **Official Test Mode**: Strict linear progression, no practice features, formal assessment
+## What It Includes
 
-### 2. **Interactive Question Types**
-- **Click-based Questions**: Users click on specific areas (lumen, polyps) with mask validation
-- **Multiple Choice Questions**: Location and positioning assessments
-- **Polyp Reports**: Comprehensive classification forms with dropdown options
-- **Time Window Detection**: Real-time polyp detection during video playback
+- `ColonscopyVideoSim_Demo_v0.py` - the OpenCV menu that launches each mode
+- `perception_test_practice_demo_v1.py` - practice mode with navigation, overlays, debug options, and review tools
+- `perception_test_official_demo_v1.py` - official mode with stricter linear progression
+- `video_review.py` - a marker-based video review tool
+- `mask_creator.py` - a tool for drawing polygon masks on video frames
+- `data/new_perception_markers.csv` - timed perception questions
+- `data/masks/` - PNG masks used to validate click-based answers
+- `data/results/` - exported test results
+- `scripts/` - one-off helper scripts I used while building and testing features
 
-### 3. **Advanced Video Navigation**
-- Frame-by-frame navigation with arrow keys
-- Time-based jumping with precise input
-- Fullscreen toggle for immersive experience
-- Variable playback speed control
+## Main Modes
 
-### 4. **Comprehensive Scoring System**
-- Real-time score tracking with visual feedback
-- Separate polyp detection and accuracy scoring
-- Detailed performance analytics
-- CSV export for data analysis
+### Video Review
 
-### 5. **Professional UI/UX**
-- Responsive sidebar with real-time information
-- Visual progress indicators
-- Animated score popups
-- Intuitive keyboard and mouse controls
+I built the review mode so I could step through colonoscopy footage with marker overlays. It helps inspect where important events happen in the video before turning them into questions or masks.
 
-## 🚀 Getting Started
+### Practice Mode
 
-### Prerequisites
+Practice mode is where most training happens. It includes extra controls that would be inappropriate in an assessment, but useful while learning:
+
+- jump to markers
+- move to the next or previous marker
+- show or hide mask overlays
+- use debug information
+- review and export results
+
+### Official Test Mode
+
+Official mode uses the same general question flow but removes practice shortcuts. The user has to progress through the test in order, with no marker skipping, no overlay toggles, and no debug mode.
+
+### Mask Creator
+
+The mask creator lets me capture a video frame and draw polygon masks around target areas. Those masks are saved as PNG files and later used to check whether a click landed inside the expected region.
+
+## Question Types
+
+The simulator supports several question styles:
+
+- lumen click questions
+- polyp click questions
+- timed polyp detection windows
+- multiple choice location questions
+- polyp report forms with dropdown-style choices
+
+The marker CSV controls when each question appears. For example, `data/new_perception_markers.csv` stores the start time, optional end time, question type, question text, mask path, options, and correct answer.
+
+## Setup
+
+This is a Python project. I used OpenCV for video playback and drawing, NumPy for image and mask work, and Tkinter for small dialogs.
+
+Install the main dependencies:
+
 ```bash
 pip install opencv-python numpy
 ```
 
-### Quick Start
-1. **Launch the application**:
-   ```bash
-   python ColonscopyVideoSim_Demo_v0.py
-   ```
+Tkinter usually comes with Python on Windows. On some Linux installs, it may need to be installed separately through the system package manager.
 
-2. **Choose your mode**:
-   - **Video Review**: Analyze video with marker overlays
-   - **Practice Mode**: Train with full feature set
-   - **Official Test**: Take formal assessment
-   - **Mask Creator**: Create new question masks
+The scripts expect colonoscopy videos under:
 
-### Controls Reference
-
-#### Main Menu
-- **W/S**: Navigate options
-- **Enter**: Select option
-- **F**: Toggle fullscreen
-- **Q**: Quit
-
-#### Test Modes
-- **Space**: Play/pause video
-- **Arrow Keys**: Navigate frames
-- **Mouse**: Click to answer questions
-- **W/S**: Navigate MCQ options
-- **F**: Toggle fullscreen
-- **Q**: Quit
-
-#### Practice Mode Only
-- **N/P**: Next/previous marker
-- **J**: Jump to specific marker
-- **O**: Toggle mask overlays
-- **D**: Toggle debug mode
-- **R**: Show review screen
-
-## 📁 Project Structure
-
-```
-Colonoscopy_VideoSim/
-├── ColonscopyVideoSim_Demo_v0.py    # Main menu and launcher
-├── perception_test_v2.py            # Practice mode test
-├── perception_test_official.py      # Official test mode
-├── video_review.py                  # Video review tool
-├── mask_creator.py                  # Interactive mask creation
-├── data/
-│   ├── masks/                       # Question mask images
-│   ├── results/                     # Test results and analytics
-│   └── *.csv                        # Marker and question data
-├── videos/                          # Video assets
-└── scripts/                         # Utility and testing scripts
+```text
+videos/
 ```
 
-## 🔧 Configuration
+The main scripts currently look for:
 
-### Video Setup
-- Place video files in `videos/` directory
-- Update `VIDEO_PATH` in relevant files
-- Supported formats: MP4, AVI, MOV
+```text
+videos/Without annotations (edited).mp4
+videos/With annotations (edited).mp4
+```
 
-### Marker Configuration
-- CSV files contain question timing and content
-- Format: `start_time, end_time, question_text, question_type, options, correct_answer`
-- Time format: seconds (e.g., 396.167 for 06:36.167)
+Those files are large medical media assets, so they may not be committed with the code. If the video file names differ, update the `VIDEO_PATH` values in the relevant script.
 
-### Mask Creation
-- Use `mask_creator.py` for interactive mask creation
-- Supports multiple polyps per frame
-- Automatic naming with video and timestamp
-- PNG format for compatibility
+## Running It
 
-## 📊 Data Management
+Start from the menu:
 
-### Results Export
-- Automatic CSV export after test completion
-- Detailed performance metrics
-- Individual question responses
-- Timing and accuracy data
+```bash
+python ColonscopyVideoSim_Demo_v0.py
+```
 
-### Marker Management
-- Centralized CSV-based configuration
-- Easy addition of new questions
-- Support for multiple question types
-- Flexible timing windows
+Or run a mode directly:
 
-## 🎨 User Interface Design
+```bash
+python perception_test_practice_demo_v1.py
+python perception_test_official_demo_v1.py
+python video_review.py
+python mask_creator.py
+```
 
-### Responsive Layout
-- Adaptive window sizing based on screen resolution
-- Centered positioning for optimal viewing
-- Professional color scheme and typography
+## Controls
 
-### Visual Feedback
-- Real-time status indicators
-- Animated score popups
-- Progress bars and timers
-- Clear instruction overlays
+Main menu:
 
-### Accessibility Features
-- Keyboard navigation support
-- High contrast text
-- Clear visual hierarchy
-- Intuitive control mapping
+- `W` / `S` - move through menu options
+- `Enter` - select a mode
+- `F` - toggle fullscreen
+- `Q` - quit
 
-## 🔍 Technical Implementation
+Practice and official test modes:
 
-### Video Processing
-- Native resolution preservation for accuracy
-- Efficient frame-by-frame navigation
-- Smooth playback with variable speed
-- Memory-optimized video handling
+- `Space` - play or pause
+- `Arrow keys` - move through frames where supported
+- `Mouse click` - answer click-based questions
+- `W` / `S` - move through multiple choice options
+- `Q` - quit
 
-### Question System
-- Modular question type architecture
-- Flexible scoring algorithms
-- Real-time validation and feedback
-- Comprehensive state management
+Practice-only controls:
 
-### Data Persistence
-- CSV-based configuration
-- Automatic result logging
-- Backup and recovery systems
-- Cross-platform compatibility
+- `N` / `P` - next or previous marker
+- `J` - jump to a marker
+- `O` - toggle mask overlay
+- `D` - toggle debug mode
+- `R` - open the review screen
 
-## 🧪 Testing and Quality Assurance
+Mask creator:
 
-### Automated Testing
-- Unit tests for core functionality
-- Integration tests for question flow
-- Performance benchmarking
-- Cross-platform compatibility testing
+- `Arrow keys` - move through frames
+- `Space` - play or pause
+- `C` - capture the current frame and draw a mask
+- `G` - go to a specific timestamp
+- `F` - toggle fullscreen
+- `Q` - quit
 
-### Manual Testing
-- User experience validation
-- Performance optimization
-- Bug tracking and resolution
-- Feature regression testing
+## Technical Decisions
 
-## 🔮 Future Enhancements
+### I used OpenCV for the main interface
 
-### Planned Features
-- **3D Visualization**: Enhanced spatial understanding
-- **AI Integration**: Automated polyp detection assistance
-- **Multiplayer Mode**: Collaborative training sessions
-- **Cloud Storage**: Remote result synchronization
-- **Mobile Support**: Tablet and mobile device compatibility
+I chose OpenCV because the project is centred on video frames, timing, overlays, and pixel-level click validation. It gave me direct control over playback, frame stepping, drawing text, and checking masks.
 
-### Technical Improvements
-- **OOP Refactoring**: Enhanced code organization and maintainability
-- **Database Integration**: Advanced data management
-- **API Development**: External system integration
-- **Performance Optimization**: Enhanced video processing
+The trade-off is that the UI code is lower-level than it would be in a desktop GUI framework. Buttons, sidebars, dropdown-like controls, and review screens are drawn manually on image frames. That made the interface more work to maintain, but it kept the video and annotation logic in one place.
 
-## 👨‍💻 Developer Information
+### I used CSV files for marker data
 
-### Primary Developer
-- **Role**: Full-stack developer and system architect
-- **Contributions**: Complete application design and implementation
-- **Technologies**: Python, OpenCV, Computer Vision, UI/UX Design
+I kept marker data in CSV because it was easy to edit, inspect, and share while the test content was changing. The marker file can define timings, question types, answer options, and mask paths without changing the Python code.
 
-### Key Achievements
-- Designed and implemented complete endoscopy training platform
-- Created dual-mode system for practice and assessment
-- Developed interactive mask creation and annotation tools
-- Implemented comprehensive scoring and analytics system
-- Established professional documentation and code standards
+The trade-off is that CSV does not enforce much structure. A database or typed config format would catch more mistakes, but CSV was fast and practical for the prototype stage.
 
-### Technical Skills Demonstrated
-- **System Architecture**: Modular, scalable design
-- **User Interface Design**: Professional, intuitive UX
-- **Video Processing**: Real-time video manipulation and analysis
-- **Data Management**: CSV-based configuration and results export
-- **Quality Assurance**: Comprehensive testing and documentation
+### I used PNG masks for click validation
 
-## 📄 License and Usage
+For click-based questions, I used binary mask images. When the user clicks, the app checks whether that pixel falls inside the expected mask. This works well for lumen and polyp questions because the correct answer is spatial, not just textual.
 
-This application was developed as part of a research project. The codebase demonstrates advanced software engineering practices and can serve as a portfolio piece showcasing:
+The trade-off is that masks need careful alignment with the source video resolution. That is why the code tries to preserve the original frame dimensions and resizes masks with nearest-neighbour interpolation where needed.
 
-- Complex system design and implementation
-- Professional software development practices
-- Medical software development experience
-- Computer vision and video processing expertise
-- User interface and experience design
+### I split practice and official modes
 
-## 🤝 Contributing
+Practice mode and official mode are separate files. This made it easier to lock down the official test while keeping practice features available.
 
-For collaboration or enhancement requests, please contact the primary developer. The codebase is designed for extensibility and welcomes contributions that maintain the established quality standards.
+The trade-off is duplication. A lot of the playback, question, scoring, and review logic exists in both files. I left a refactoring plan in `REFACTORING_TODO.md` because the better long-term design would be a shared core class with mode-specific feature flags.
 
----
+### I kept results as CSV exports
 
-**Note**: This application represents a significant achievement in medical training software development, combining advanced video processing, interactive assessment, and professional user experience design to create a comprehensive endoscopy training platform. 
+Results are written under `data/results/`. This made it easy to open outputs in Excel or analyse them later without building an admin dashboard.
+
+The trade-off is that there is no multi-user account system or central result store. For the project scope, flat files were enough.
+
+## Current Limitations
+
+- The code has duplicated logic between practice and official modes.
+- Some paths still reflect the development machine or older file names.
+- There is no requirements file yet.
+- The UI is built with OpenCV drawing calls, so layout changes take more manual work.
+- The app depends on local video assets being placed at the expected paths.
+
+## What I Would Improve Next
+
+If I returned to this project, I would first refactor the perception test into shared modules:
+
+- video playback manager
+- marker loader
+- question handler
+- results exporter
+- UI drawing layer
+- mode configuration for practice vs official testing
+
+After that, I would add a `requirements.txt`, clean up old path references, and write tests around marker loading, question timing, mask validation, and result export.
+
+## Project Status
+
+This project is a working university/job project prototype. It shows how I approached a real multimedia training problem: using video, overlays, annotations, timed questions, and recorded results to help clinicians practise perception tasks away from live procedures.
